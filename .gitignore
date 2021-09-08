@@ -2,6 +2,16 @@
 # Created by https://www.toptal.com/developers/gitignore/api/wordpress
 # Edit at https://www.toptal.com/developers/gitignore?templates=wordpress
 
+# ignore everything in the root except the "wp-content" directory.
+!wp-content/
+
+# ignore everything in the "wp-content" directory, except:
+# "mu-plugins", "plugins", "themes" directory
+wp/wp-content/*
+!wp/wp-content/mu-plugins/
+!wp/wp-content/plugins/
+!wp/wp-content/themes/
+
 # ignore these plugins
 wp/wp-content/plugins/hello.php
 

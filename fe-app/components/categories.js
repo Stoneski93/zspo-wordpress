@@ -9,8 +9,8 @@ export default function Categories({ categories }) {
           </span>
         ))
       ) : (
-        <span className="ml-1">{categories.edges.node.name}</span>
+        <span className="ml-1">{categories?.edges?.node?.name}</span>
       )}
     </span>
-  )
+  );
 }
